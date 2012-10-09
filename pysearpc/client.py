@@ -1,13 +1,6 @@
 import simplejson as json
 
-class SearpcError(Exception):
-
-    def __init__(self, msg):
-        self.msg = msg
-
-    def __str__(self):
-        return self.msg
-
+from common import SearpcError
 
 def _fret_int(ret_str):
     try:
